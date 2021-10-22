@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0a61049be292195217d5a7e2d1b6ecb4",
+    "content-hash": "810dfb95e610e95a6bc4224196f2e7f9",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -8139,6 +8139,75 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "franzl/studio",
+            "version": "0.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/franzliedke/studio.git",
+                "reference": "d9502a583f4a0c43aa9875c8d8cfd3a66065a8da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/franzliedke/studio/zipball/d9502a583f4a0c43aa9875c8d8cfd3a66065a8da",
+                "reference": "d9502a583f4a0c43aa9875c8d8cfd3a66065a8da",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": ">=7.0",
+                "symfony/console": "^2.7 || ^3.0 || ^4.0 || ^5.0",
+                "symfony/filesystem": "^2.5 || ^3.0 || ^4.0 || ^5.0",
+                "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0"
+            },
+            "replace": {
+                "franzliedke/studio": "self.version"
+            },
+            "require-dev": {
+                "composer/composer": "1.10.x-dev",
+                "phpspec/phpspec": "^6.3"
+            },
+            "bin": [
+                "bin/studio"
+            ],
+            "type": "composer-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.11.x-dev"
+                },
+                "class": "Studio\\Composer\\StudioPlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Studio\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Develop your Composer libraries with style",
+            "keywords": [
+                "composer",
+                "development",
+                "workflow"
+            ],
+            "support": {
+                "issues": "https://github.com/franzliedke/studio/issues",
+                "source": "https://github.com/franzliedke/studio/tree/0.15.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/franzliedke",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/franzl/studio",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-12-18T11:30:50+00:00"
+        },
         {
             "name": "myclabs/deep-copy",
             "version": "1.10.2",
